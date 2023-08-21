@@ -1,0 +1,183 @@
+
+.Section2 {
+  width: 100%;
+  height: auto;
+  padding: 59px 60px 77px 81px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.NewArrivalsContainer {
+  width: 180px;
+  height: 800px;
+  padding: 20% 10% 20% 10%;
+  background: linear-gradient(0deg, rgba(86, 67, 53, 0.77) 0%, rgba(86, 67, 53, 0.77) 100%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.NewArrivals {
+  
+  transform-origin: 0 0;
+  color: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  align-items: center; 
+  font-size: 30px;
+  line-height: 24px;
+  transform-origin: left center; 
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word; 
+}
+
+.BestSellersContainer {
+  width: 100%;
+  max-width: 1084px;
+  height: 50rem;
+  position: relative;
+  background: #083344;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.LampThaiStyle1 {
+  width: 295px;
+  height: 300px;
+  margin-left: 20rem;
+  max-width: 18rem;
+  max-height: 18rem;
+}
+
+.BestSellersTitle {
+  width: 100%;
+  color: #f3f3f3;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  word-wrap: break-word;
+  transform: translate(2%,-590%);
+}
+
+.Plant1 {
+  width: 50%;
+  height: auto;
+  max-width: 291px;
+  max-height: 550px;
+  background-color: transparent ;
+  transform: translate(15%,-30%);
+  
+}
+
+.PexelsEneidaNieves11125981 {
+  width: 26rem;
+  height: 22rem;
+  max-width: 336px;
+  max-height: 410px;
+  transform: translate(130%,-180%);
+  transform-origin: 0 0;
+  z-index: 1;
+}
+
+.egg {
+  width: 100%;
+  height: 22rem;
+  max-width: 336px;
+  max-height: 410px;
+  transform: translate(130%, 110%);
+  background: linear-gradient(0deg, rgba(145, 127, 108, 0.41) 0%, rgba(145, 127, 108, 0.41) 100%);
+  border-radius: 30% 70% 27% 73% / 44% 69% 31% 56%;
+  position: absolute;
+  z-index: 0;
+}
+
+
+
+.Ellipse1 {
+  position: absolute;
+  top: 450px;
+  left: 330px;
+  width: 180px; 
+  height: auto;
+ 
+  
+}
+
+@media screen and (max-width: 768px) {
+  .Section2 {
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .NewArrivalsContainer {
+    display: none;
+  }
+  .BestSellersTitle{
+    transform: translate(10%,-70%);
+    font-weight: 200;
+  }
+  .LampThaiStyle1{
+    max-width: 108px;
+    max-height: 110px;
+    transform: translate(-100%,60%);
+  }
+  .BestSellersContainer {
+    width: 100%;
+    max-width: 351px;
+    height: 482px; 
+    justify-content: center;
+    align-items: flex-start; 
+  }
+
+  .PexelsEneidaNieves11125981 {
+    max-width: 178px;
+    max-height: 217px;
+    transform: scaleX(-1); 
+    transform-origin: center;
+    position: relative; 
+    top: -150px; 
+  }
+  .egg{
+    max-width: 250px;
+    max-height: 138px;
+    transform: translate(-0.1%,100%);
+  }
+  .Ellipse1{
+    display: none;
+  }
+  .Plant1{
+    transform: translate(170%,40%);
+    max-width: 134px;
+    max-height: 280px;
+   
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+  .NewArrivalsContainer{
+    transform: translateX(-5%);
+  }
+  .Section2 {
+    padding: 20px;
+    align-items: center;
+    
+  }
+
+}
+

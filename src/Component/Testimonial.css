@@ -1,0 +1,135 @@
+/* Testimonial.css */
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    height: 364px;
+    /* height: auto; */
+    margin: 0 auto;
+    background-color: #083344;
+  }
+  
+  .testimonial-card {
+    /* position: absolute; */
+    width: 25%;
+    height: 70%;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this */
+  }
+  
+  .testimonial-card:first-child {
+    background-color: #d3f2f0;
+    left: 7rem;
+    height: auto;
+  }
+  
+  .testimonial-card:nth-child(2) {
+    background-color: #d9b855;
+    width: 25%;
+    height: 70%;
+    z-index: 2;
+    bottom: 2rem;
+  }
+  
+  .testimonial-card:nth-child(3) {
+    background-color: #d3f2f0;
+    right: 7rem;
+    height: auto;
+    width: 29%;
+  }
+  
+  .testimonial-card:nth-child(2) img {
+    position: absolute;
+    bottom: -2.2rem;
+    left: 8rem;
+    z-index: 1;
+  }
+  
+  .testimonial-card:first-child img {
+    position: absolute;
+    bottom: -2rem;
+    left: 8rem;
+  }
+  
+  .testimonial-card:nth-child(2) p {
+    position: absolute;
+    right: 1px;
+  }
+  
+  .testimonial-card:nth-child(3) img {
+    position: absolute;
+    left: 9rem;
+    bottom: -2.3rem;
+  }
+  
+  .testimonial-card p {
+    margin: 10px 0;
+    font-family: Poppins;
+    color: black;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.02rem;
+  }
+  
+  .testimonial-card img {
+    max-width: 100%;
+    max-height: 50%;
+    position: absolute; /* Position the image absolutely */
+    bottom: -29px; /* Adjust the value to move the image down */
+    left: 7rem; /* Center the image horizontally */
+    right: 0;
+    width: 20%;
+  }
+  
+  .top-icon {
+    text-align: center;
+    margin-top: 10px; /* Adjust this value to control the space between the icon and the text */
+  }
+  
+  .top-icon svg {
+    font-size: 30px; /* Adjust the font size of the icon */
+    color: #083344; /* Adjust the color of the icon */
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-card:nth-child(2),
+    .testimonial-card:last-child {
+      display: none;
+    }
+    .testimonial-container{
+        height: auto;
+    }
+    /* Responsive styles for the first card */
+    .testimonial-card:first-child {
+      width: 80%;
+      height: 100%;
+      /* height: auto; */
+      margin: 20px auto;
+      left: 0; /* Reset the left value */
+      right: 0; /* Reset the right value */
+    }
+  
+    .testimonial-card:first-child img {
+      position: relative;
+      bottom: initial;
+      left: 20%; /* Center the image horizontally */
+      transform: translateX(-50%); /* Move the image back by half of its width */
+      width: 40%; /* Adjust the width for responsive image */
+    }
+  
+    .testimonial-card:first-child p {
+      position: static;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+  }
+  

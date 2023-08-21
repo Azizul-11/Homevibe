@@ -1,0 +1,76 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .containr {
+        display: none;
+       }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .containr {
+       display: none;
+      }
+}
+@media only screen and (min-width: 600px) {
+    .containr {
+        display: none;
+       }
+}
+@media (max-width: 768px) {
+    .containr {
+    background-color: #917F6C;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    }
+  
+    .col-md-6 {
+      text-align: center;
+    }
+  
+    .small-screen-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-image {
+      width: 80%;
+      height: auto;
+      max-width: 100%;
+      margin: 20px auto;
+    }
+  
+    .designers-text {
+      font-size: 1rem;
+      margin: 0;
+    }
+  
+    .under-image {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #F9BA7F;
+      margin: 0.5rem 0;
+    }
+  
+    .discover-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.2;
+      color: white;
+      margin: 1rem 0;
+    }
+  
+    .rounded-btn {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 1rem 0;
+    }
+  }
+  

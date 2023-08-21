@@ -1,0 +1,268 @@
+/* About.css */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #564335;
+    font-family: "Poppins";
+    position: relative; 
+  }
+ 
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .homevibe-text {
+    position: absolute;
+    font-size: 28px;
+    font-family: 'Yatra One';
+    left: 5rem;
+    
+}
+
+.homevibe-text .home {
+    color: white;
+}
+
+.homevibe-text .vibe {
+    color: #F9BA7F;
+}
+  
+  .about-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-content h2 {
+    position: absolute;
+    font-size: 19px;
+    color: white;
+    margin-top: 3rem;
+    left: 9rem;
+  }
+  
+  .about-content p {
+    position: relative;
+    margin: 10px 0;
+    top: 10rem;
+    right: 20rem;
+  }
+  .email-input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 11rem;
+    left: 5rem;
+  }
+  
+  input[type="email"] {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    margin-right: 17rem;
+    color: #F9BA7F;
+    font-family: "Poppins";
+  }
+  
+  .subscribe-button {
+    background-color: transparent;
+    border: none;
+    color: #F9BA7F;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+ hr{
+    position: relative;
+    color: white !important;
+    top: 1.6rem;
+    right: 19rem;
+ }
+ .terms-privacy {
+    position: relative;
+    display: flex;
+    top: 15rem;
+    gap: 1.5rem;
+    right: 18rem;
+  }
+  
+  h6 {
+    color: white !important;
+  }
+  
+
+
+.about-lists {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 35%; /* Occupy full width */
+    margin-top: 3rem; /* Add some margin to separate from content above */
+    left: 20rem;
+  }
+  
+  .company-list,
+  .product-list {
+    flex: 1;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-family: "Poppins";
+    color: white;
+  }
+  
+  /* Adjust the font size and margin for responsiveness */
+  .company-list h3,
+  .product-list h3 {
+    font-size: 18px;
+    color: #F9BA7F;
+    font-family: "Poppins";
+  }
+  
+  .company-list li,
+  .product-list li {
+    margin: 13px 0; /* Adjust margin for list items */
+  }
+  
+  @media (max-width: 768px) {
+    .about-content h2 {
+      position: static; /* Remove absolute positioning on smaller screens */
+      font-size: 16px; /* Reduce font size for smaller screens */
+      margin-top: 1.5rem; /* Adjust margin for smaller screens */
+      text-align: center; 
+    }
+  
+    .about-content p {
+      position: static; /* Remove absolute positioning on smaller screens */
+      margin: 1rem 0; /* Adjust margin for smaller screens */
+      text-align: center; /* Center the text on smaller screens */
+    }
+  
+    .email-input {
+      position: static; /* Remove absolute positioning on smaller screens */
+      display: flex;
+      flex-direction: column; /* Stack input and button on smaller screens */
+      align-items: center;
+      margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+  
+    input[type="email"] {
+      margin-right: 0; /* Remove margin on smaller screens */
+      margin-bottom: 1rem; /* Add margin below input on smaller screens */
+      width: 100%; /* Make input occupy full width */
+    }
+  
+    .subscribe-button {
+      margin-right: 0; 
+      transform: translate(80%,-170%);
+    }
+  
+    hr {
+      position: static; 
+      margin: 1rem 0; 
+      color: white !important;
+
+    }
+    .about-lists {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; Align vertically in the middle */
+        width: 100%;
+        margin-top: 2rem;
+        left: 0;
+      }
+    
+      .company-list,
+      .product-list {
+        flex: 1;
+        margin: 0;
+      }
+    
+      .company-list h3,
+      .product-list h3 {
+        font-size: 14px;
+      }
+    
+      .terms-privacy {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5rem;
+        margin-top: 1rem; /* Adjust margin for spacing */
+        right: 13rem;
+        top: 18rem; /* Reset top position */
+      }
+  
+    h6 {
+      font-size: 14px; 
+    }
+  }
+
+
+@media (max-width: 480px) {
+    .about-lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      justify-content: space-between;
+      align-items: flex-start; 
+      width: 100%;
+      margin-top: 2rem;
+      left: 0;
+    }
+  
+    .company-list,
+    .product-list {
+      padding: 0;
+      list-style: none;
+      text-align: left;
+      font-family: "Poppins";
+      color: white;
+    }
+  
+    .company-list h3,
+    .product-list h3 {
+      font-size: 14px;
+    }
+    .product-list h3{
+    position: absolute;
+    top: -1rem;
+    margin: 0 ;
+    }
+    .product-list{
+        position: absolute;
+        margin: 0;
+        left: 13rem;
+        top: 1rem;
+    }
+    .terms-privacy {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        margin-top: 1rem;
+        right: 0;
+        top: 17rem;
+        font-size: 14px;
+      
+    }
+    hr{
+        position: absolute;
+        top: 10.7rem;
+        left: 2rem;
+        right: 2rem;
+        
+    }
+    .about-content p{
+        /* position: absolute; */
+        font-size: 14px;
+    }
+  }
+  
+  /* ... (rest of your existing styles) */
+  
