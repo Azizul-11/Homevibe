@@ -181,3 +181,30 @@
 
 }
 
+@media screen and (max-width: 480px){
+  .Section2 {
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  .BestSellersContainer{
+    width: 100%;
+    max-width: none;
+    height: auto;
+    overflow: hidden;
+  }
+
+.BestSellersTitle{
+  position: relative;
+  bottom: 2.6rem;
+  right: 12px;
+}
+.LampThaiStyle1{
+  position: relative;
+  bottom: 4rem;
+  right: 18px;
+}
+
+}
+

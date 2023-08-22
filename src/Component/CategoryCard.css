@@ -1,6 +1,6 @@
 .dd{
     position: relative;
-   width: 100%;
+   width: auto;
     height: 600px; 
     background-color: #346C81;
 }
@@ -184,16 +184,6 @@
 .img13:hover{
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
