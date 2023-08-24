@@ -1,6 +1,199 @@
-.dd{
+.category-card {
+    background-color: #346C81;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-family: "poppins";
+  }
+  
+  .card-row {
+    display: flex;
+    gap: 180px;
+    justify-content: center;
+    width: 100%;
+    height: 340px;
+  }
+  
+  .category-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px; /* You can adjust the width to your preference */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category-text {
+    font-size: 20px;
+    color: black;
+    font-family: "poppins";
+  }
+  
+  .category-box img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .img1 {
     position: relative;
-   width: auto;
+    width: 120px;
+    left: 3.5rem;
+    top: 7rem;
+  }
+  
+  .img2{
+    position: relative;
+    width: 120px;
+    right: 4.1rem;
+    top: -2rem;
+  }
+.img3{
+    position: relative;
+    width: 130px;
+    right: 5rem;
+    top: -2rem;
+}
+
+.img4{
+    position: relative;
+    width: 130px;
+    left: 4.5rem;
+    top: -13rem;
+}
+.first-category .category-text {
+    position: relative;
+    top: 22rem;
+  }
+
+
+.img5{
+    position: relative;
+    width: 120px;
+    top: 12rem;
+    right: 4.3rem;
+}
+.img6{
+    position: relative;
+    width: 130px;
+    right: 6rem;
+    top: 12rem;
+}
+  
+.img7{
+    position: relative;
+    width: 120px;
+    top: -9rem;
+    left: 4rem;
+}
+.img8{
+    position: relative;
+    width: 120px;
+    top: -9rem;
+    left: 6rem;
+}
+.img9{
+    position: relative;
+    width: 120px;
+    top: -16rem;
+}
+
+.second-category .category-text{
+    position: relative;
+    top: 27rem;
+}
+  
+ .img10{
+    position: relative;
+    width: 130px;
+    top: 8rem;
+    right: 6rem;
+ } 
+  
+ .img11{
+    position: relative;
+    width: 150px;
+    top: -5rem;
+    left: 3rem;
+ }
+ .img12{
+    position: relative;
+    width: 130px;
+    top: -6rem;
+    left: 6rem;
+ }
+ .img13{
+    position: relative;
+    width: 130px;
+    top: -15rem;
+    right: 3rem;
+ }
+  
+ .third-category .category-text{
+    position: relative;
+    top: 23rem;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10,
+.img11,
+.img12,
+.img13{
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover,
+.img7:hover,
+.img8:hover,
+.img9:hover,
+.img10:hover,
+.img11:hover,
+.img12:hover,
+.img13:hover
+{
+    opacity: 1;
+} 
+
+@media screen and (max-width: 768px){
+    .category-card{
+        display:none;
+    }
+}
+
+
+
+
+
+/* .dd{
+    position: relative;
+    width: auto;
     height: 600px; 
     background-color: #346C81;
 }
@@ -9,7 +202,6 @@
     display: flex;
     justify-content: center;
     color: white;
-    /* top: 20rem; */
     top: 2rem;
 }
 
@@ -30,6 +222,7 @@
     transform: translateY(500%);
     font-size: 24px;
 }
+
 
 .img1{
     transform: translate(110%,-220%);
@@ -70,7 +263,6 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    /* transform: translate(14%,20%); */
     transform: translate(190%,-136%);
 }
 .p2{
@@ -104,12 +296,12 @@
     width: 140px;
 }
 .imag2 {
-    position: relative; /* Use relative positioning for the container */
+    position: relative; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Make sure the container takes full height */
+    height: 100%; 
   }
 .img5,
 .img6,
@@ -133,7 +325,6 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    /* transform: translate(14%,20%); */
     transform: translate(350%,-235%);
 }
 .p3{
@@ -146,7 +337,7 @@
     font-size: 24px;
 }
 .imag3{
-    position: relative; /* Use relative positioning for the container */
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -205,7 +396,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-        .dd{
-            display: none;
-        }
-  }
+    .imag,
+    .imag2,
+    .imag3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  } */
